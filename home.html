@@ -35,7 +35,12 @@
             margin-bottom: 20px;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
         }
         .swiper {
             height: 400px;
@@ -82,7 +87,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">Dereje Haddis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -229,12 +234,12 @@
     <section id="contact" class="mt-5">
         <h2 class="section-title">Contact</h2>
         <div class="row">
-            <div class="contact-info">
+            <div class="contact-info col-md-6">
                 <p><i class="fas fa-envelope"></i> Email: Dereje.haddis@gmail.com</p>
                 <p><i class="fas fa-phone"></i> Phone: +251913462067</p>
                 <p><i class="fas fa-map-marker-alt"></i> Location: Addis Ababa, Ethiopia</p>
             </div>
-            <div class="contact-info">
+            <div class="contact-info col-md-6">
                 <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/dereje-haddis-30b30232/" target="_blank">View LinkedIn Profile</a></p>
                 <p><i class="fab fa-instagram"></i> Facebook: <a href="https://www.facebook.com/dereje.bridge/" target="_blank">View Facebook Profile</a></p>
                 <p><i class="fab fa-facebook"></i> Instagram: <a href="https://www.instagram.com/dere.haddis/" target="_blank">View Instagram Profile</a></p>
