@@ -53,9 +53,32 @@
             border-radius: 50%; /* Make it circular */
             margin-bottom: 1rem; /* Space below the image */
         }
+        /* Splash Screen Styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        .splash-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
+
+<div class="splash-screen" id="splashScreen">
+    <h1>Welcome to My Portfolio</h1>
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
@@ -76,7 +99,6 @@
 </nav>
 
 <div id="home" class="jumbotron text-center">
-    
     <img src="./Asset/img/image.jpg" alt="Dereje Haddis"> <!-- Add your image here -->
     <h1 class="display-4">Dereje Haddis</h1>
     <p class="lead">Information Systems Manager & Senior Software Engineer</p>
@@ -207,18 +229,18 @@
     <section id="contact" class="mt-5">
         <h2 class="section-title">Contact</h2>
         <div class="row">
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> Email: Dereje.haddis@gmail.com</p>
-            <p><i class="fas fa-phone"></i> Phone: +251913462067</p>
-            <p><i class="fas fa-map-marker-alt"></i> Location: Addis Ababa, Ethiopia</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: Dereje.haddis@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +251913462067</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Addis Ababa, Ethiopia</p>
+            </div>
+            <div class="contact-info">
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/dereje-haddis-30b30232/" target="_blank">View LinkedIn Profile</a></p>
+                <p><i class="fab fa-instagram"></i> Facebook: <a href="https://www.facebook.com/dereje.bridge/" target="_blank">View Facebook Profile</a></p>
+                <p><i class="fab fa-facebook"></i> Instagram: <a href="https://www.instagram.com/dere.haddis/" target="_blank">View Instagram Profile</a></p>
+                <p><i class="fab fa-twitter"></i> Twitter: <a href="https://x.com/derehaddis" target="_blank">View Twitter Profile</a></p>
+            </div>
         </div>
-        <div class="contact-info">
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/dereje-haddis-30b30232/" target="_blank">View Linkedin Profile</a></p>
-            <p><i class="fab fa-instagram"></i> Facebook: <a href="https://www.facebook.com/dereje.bridge/" target="_blank">View facebook Profile</a></p>
-            <p><i class="fab fa-facebook"></i> Instagram: <a href="https://www.instagram.com/dere.haddis/" target="_blank">View Instagram Profile</a></p>
-            <p><i class="fab fa-twitter"></i> Twitter: <a href="https://x.com/derehaddis" target="_blank">View Twitter Profile</a></p>
-        </div>
-    </div>
     </section>
 </div>
 
@@ -240,6 +262,14 @@
             spaceBetween: 10,
             loop: true,
         });
+    });
+
+    // Splash Screen Logic
+    window.addEventListener('load', () => {
+        const splashScreen = document.getElementById('splashScreen');
+        setTimeout(() => {
+            splashScreen.classList.add('hidden');
+        }, 2000); // Adjust duration as needed (2000ms = 2 seconds)
     });
 </script>
 </body>
