@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dereje Haddis - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(-45deg, #1a1a1a, #2c3e50, #34495e, #2c3e50);
+            background-size: 400% 400%;
+            color: #ecf0f1;
+        }
+        .jumbotron {
+            background-color: rgba(44, 62, 80, 0.9);
+            padding: 4rem 2rem;
+            margin-bottom: 0;
+        }
+        .section-title {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        .card {
+            background-color: rgba(52, 73, 94, 0.9);
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .swiper {
+            height: 400px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #3498db;
+        }
+        .jumbotron img {
+            width: 100px; /* Adjust as needed */
+            border-radius: 50%; /* Make it circular */
+            margin-bottom: 1rem; /* Space below the image */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home" class="jumbotron text-center">
+    
+    <img src="./Asset/img/image.jpg" alt="Dereje Haddis"> <!-- Add your image here -->
+    <h1 class="display-4">Dereje Haddis</h1>
+    <p class="lead">Information Systems Manager & Senior Software Engineer</p>
+    <hr class="my-4">
+    <p>Experienced in software development, data engineering, and health information systems</p>
+    <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Me</a>
+</div>
+
+<div class="container mt-5">
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Information Systems Manager</h3>
+                            <h4>Amref Health Africa</h4>
+                            <p class="text-muted">May 2022 – Present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Senior Software Engineer Team Lead</h3>
+                            <h4>Opian Health Analytics</h4>
+                            <p class="text-muted">January 2021 - May 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Associate Senior Software Developer</h3>
+                            <h4>Clinton Health Access Initiative</h4>
+                            <p class="text-muted">June 2011 – Dec 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Software Developer</h3>
+                            <h4>EBG & Methodic Information Technology PLC</h4>
+                            <p class="text-muted">Dec 2007 - Dec 2010</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="education" class="mt-4">
+        <h2 class="section-title">Education</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>BSc in Computer Science</h3>
+                            <h4>HiLCoE School of Computer Science and Technology</h4>
+                            <p class="text-muted">Nov 2003 – Jan 2007</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>MSc in Computer Science</h3>
+                            <h4>American College of Technology</h4>
+                            <p class="text-muted">Expected Completion: 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Project Management</h3>
+                            <ul>
+                                <li>Project Initiation, Planning and Execution</li>
+                                <li>Agile Methodology</li>
+                                <li>Budgeting and Financial Management</li>
+                                <li>Team Building/Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Backend Development</h3>
+                            <ul>
+                                <li>Architecture: Repository Pattern, Micro-service</li>
+                                <li>Languages: C#, Java, PHP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Frontend Development</h3>
+                            <ul>
+                                <li>HTML, CSS, JavaScript, React</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-5">
+        <h2 class="section-title">Contact</h2>
+        <div class="row">
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: Dereje.haddis@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Phone: +251913462067</p>
+            <p><i class="fas fa-map-marker-alt"></i> Location: Addis Ababa, Ethiopia</p>
+        </div>
+        <div class="contact-info">
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/dereje-haddis-30b30232/" target="_blank">View Linkedin Profile</a></p>
+            <p><i class="fab fa-instagram"></i> Facebook: <a href="https://www.facebook.com/dereje.bridge/" target="_blank">View facebook Profile</a></p>
+            <p><i class="fab fa-facebook"></i> Instagram: <a href="https://www.instagram.com/dere.haddis/" target="_blank">View Instagram Profile</a></p>
+            <p><i class="fab fa-twitter"></i> Twitter: <a href="https://x.com/derehaddis" target="_blank">View Twitter Profile</a></p>
+        </div>
+    </div>
+    </section>
+</div>
+
+<footer class="text-white text-center py-3 mt-5">
+    <p>&copy; 2023 Dereje Haddis. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swipers = document.querySelectorAll('.swiper');
+    swipers.forEach(swiperElement => {
+        new Swiper(swiperElement, {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+        });
+    });
+</script>
+</body>
+</html>
